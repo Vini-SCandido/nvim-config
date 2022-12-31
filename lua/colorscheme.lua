@@ -1,3 +1,6 @@
-vim.cmd('colorscheme material')
+vim.cmd('colorscheme nord')
 vim.cmd('set background=dark')
-vim.cmd('hi Normal guibg=none')
+
+require('material').setup({
+  lualine_style = 'default'
+})
