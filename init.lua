@@ -1,7 +1,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-require('completion')
+require('completion-coc')
 require('options')
 require('colorscheme')
 require('plugins')

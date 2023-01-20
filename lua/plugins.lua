@@ -24,4 +24,6 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
   use 'norcalli/nvim-colorizer.lua'
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+  use 'rust-lang/rust.vim'
+  use {'neoclide/coc.nvim', branch = 'release'}
 end)

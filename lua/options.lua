@@ -1,5 +1,5 @@
 local options = {
-  shell = 'pwsh',
+  shell = 'cmd',
   backup = false,                          -- creates a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
   completeopt = { "menu", "menuone", "noselect" }, -- mostly just for cmp
@@ -25,12 +25,13 @@ local options = {
   tabstop = 2,                             -- insert 2 spaces for a tab
   cursorline = false,                       -- highlight the current line
   number = true,                           -- set numbered lines
-  relativenumber = false,                  -- set relative numbered lines
+  relativenumber = true,                  -- set relative numbered lines
   signcolumn = "no",                      -- always show the sign column, otherwise it would shift the text each time
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
   guifont = "CodeNewRoman:h8",               -- the font used in graphical neovim applications
+    fileformat = 'unix',
 }
 
 vim.opt.shortmess:append "c"
