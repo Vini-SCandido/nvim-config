@@ -26,11 +26,11 @@ local options = {
   cursorline = false,                       -- highlight the current line
   number = true,                           -- set numbered lines
   relativenumber = true,                  -- set relative numbered lines
-  signcolumn = "no",                      -- always show the sign column, otherwise it would shift the text each time
+  signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
-  guifont = "CodeNewRoman:h8",               -- the font used in graphical neovim applications
+  guifont = "CaskaydiaCove NF Mono:h14",               -- the font used in graphical neovim applications
   fileformat = 'dos',
 }
 
