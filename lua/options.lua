@@ -31,7 +31,7 @@ local options = {
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
   guifont = "CodeNewRoman:h8",               -- the font used in graphical neovim applications
-    fileformat = 'unix',
+  fileformat = 'dos',
 }
 
 vim.opt.shortmess:append "c"
