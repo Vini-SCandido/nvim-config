@@ -1,3 +1,4 @@
+local util = require('lspconfig/util')
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap = true, silent = true }
@@ -121,6 +122,16 @@ l.sumneko_lua.setup {
 }
 
 l.pyright.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+}
+
+l.tsserver.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+}
+
+l.svelte.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }

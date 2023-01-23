@@ -12,6 +12,7 @@ require('treesit')
 require('tag')
 require('icons')
 require('color')
+require('catp')
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
