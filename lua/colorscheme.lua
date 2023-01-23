@@ -1,4 +1,4 @@
-vim.cmd('colorscheme catppuccin-macchiato')
+vim.cmd('colorscheme catppuccin-mocha')
 vim.cmd('set background=dark')
 
 require('material').setup({
