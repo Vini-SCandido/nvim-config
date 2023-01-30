@@ -26,4 +26,6 @@ return require('packer').startup(function(use)
   use 'rust-lang/rust.vim'
   use { "catppuccin/nvim", as = "catppuccin" }
 	use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { {'nvim-lua/plenary.nvim'} } }
+  use 'wuelnerdotexe/vim-astro'
+  use 'morhetz/gruvbox'
 end)

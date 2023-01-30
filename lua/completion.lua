@@ -1,4 +1,3 @@
-local util = require('lspconfig/util')
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap = true, silent = true }
@@ -126,12 +125,12 @@ l.pyright.setup {
   on_attach = on_attach,
 }
 
-l.tsserver.setup {
+l.astro.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
 
-l.svelte.setup {
+l.tsserver.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
