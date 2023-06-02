@@ -24,8 +24,8 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
   use 'norcalli/nvim-colorizer.lua'
   use 'rust-lang/rust.vim'
-  use { "catppuccin/nvim", as = "catppuccin" }
 	use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { {'nvim-lua/plenary.nvim'} } }
-  use 'wuelnerdotexe/vim-astro'
   use 'morhetz/gruvbox'
+  use 'folke/zen-mode.nvim'
+  use 'NLKNguyen/papercolor-theme'
 end)

@@ -101,24 +101,24 @@ l.cssls.setup {
   on_attach = on_attach
 }
 
-l.sumneko_lua.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-  settings = {
-    Lua = {
-      diagnostics = {
-        -- Get the language server to recognize the `vim` global
-        globals = { 'vim' },
-      },
-
-      workspace = {
-        -- Make the server aware of Neovim runtime files
-        library = vim.api.nvim_get_runtime_file("", true),
-        checkThirdParty = false
-      },
-    },
-  },
-}
+-- l.sumneko_lua.setup {
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+--   settings = {
+--     Lua = {
+--       diagnostics = {
+--         -- Get the language server to recognize the `vim` global
+--         globals = { 'vim' },
+--       },
+-- 
+--       workspace = {
+--         -- Make the server aware of Neovim runtime files
+--         library = vim.api.nvim_get_runtime_file("", true),
+--         checkThirdParty = false
+--       },
+--     },
+--   },
+-- }
 
 l.pyright.setup {
   capabilities = capabilities,
@@ -131,6 +131,11 @@ l.astro.setup {
 }
 
 l.tsserver.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+}
+
+l.clangd.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }

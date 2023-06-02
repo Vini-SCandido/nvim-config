@@ -1,7 +1,7 @@
 require('telescope').setup{
   pickers = {
     find_files = {
-      theme = "dropdown",
+      theme = "ivy",
     },
   },
 }
@@ -11,4 +11,3 @@ vim.keymap.set('n', '<space>s', builtin.find_files, {})
 vim.keymap.set('n', '<space>g', builtin.live_grep, {})
 vim.keymap.set('n', '<space>l', builtin.buffers, {})
 vim.keymap.set('n', '<space>h', builtin.help_tags, {})
-
